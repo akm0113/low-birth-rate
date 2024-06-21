@@ -81,15 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-let imgData = [
-    "eclipse.jpg", "eclipse2.jpg", "eclipse3.jpg"
-];
 
-let imgName = [
-    "이클립스 페퍼민트향 ",
-    "이클립스 복숭아향",
-    "이클립스 스트로베리향"
-];
 
 let thumbnailBox = document.querySelectorAll(".thumbnail");
 let imgTags = document.querySelectorAll(".imageTag");
@@ -177,28 +169,3 @@ function startFn()
 
 
 
-let nowIndex = 1;
-
-
-
-const imageSlider = document.querySelector('#imageSlider');
-
-const leftArrow = document.querySelector('#leftArrow');
-const rightArrow = document.querySelector('#rightArrow');
-
-leftArrow.addEventListener('click', moveLeft);
-rightArrow.addEventListener('click', moveRight);
-
-// 첫번째 이미지로 이동
-function moveA()
-{
-    imageSlider.style.transform ='translate(0px)';
-    nowIndex=1;
-    
-}
-// 두번째 이미지로 이동
-function moveB()
-{
-    imageSlider.style.transform ='translate(-330px)';
-    nowIndex=2;
-}
